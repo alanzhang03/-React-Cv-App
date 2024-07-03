@@ -1,4 +1,12 @@
 .App {
 	min-height: 100vh;
 	display: flex;
+	flex-direction: column;
 }
+
+.content-container {
+	display: flex;
+	flex-direction: row;
+}
+
+

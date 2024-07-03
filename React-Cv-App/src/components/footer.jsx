@@ -1,8 +1,8 @@
-import "../assets/styles/footer.css";
+import "../assets/styles/Footer.css";
 
 
 
-export default function footer() {
+export default function Footer() {
 	return (
         <>
             <div className="footer-container">
