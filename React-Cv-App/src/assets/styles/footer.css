@@ -1,0 +1,15 @@
+
+.footer-container {
+    background-color: aqua;
+    height: 10vh;
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 2rem;
+}

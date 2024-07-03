@@ -1,8 +1,12 @@
+import Footer from "./components/footer";
+
+import "./assets/styles/App.css";
+
 function App() {
 	return (
-		<>
-			<h1>HI!!!</h1>
-		</>
+		<div className="App">
+			<Footer></Footer>
+		</div>
 	);
 }
 
