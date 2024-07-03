@@ -1,6 +1,4 @@
-import "../componentStyles/FormComp.css";
-
-
+import "../componentStyles/Experience.css";
 
 export default function Experience() {
 	return (

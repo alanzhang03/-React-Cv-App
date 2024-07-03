@@ -1,4 +1,4 @@
-import "../componentStyles/FormComp.css";
+import "../componentStyles/Education.css";
 
 export default function Education() {
 	return (

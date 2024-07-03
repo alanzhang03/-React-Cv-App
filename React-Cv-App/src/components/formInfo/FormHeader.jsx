@@ -1,4 +1,4 @@
-import "../componentStyles/FormComp.css";
+import "../componentStyles/FormHeader.css";
 
 export default function FormHeader() {
 	return (

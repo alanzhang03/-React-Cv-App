@@ -7,10 +7,7 @@ function App() {
 	return (
 		<div className="App">
 			<div className="content-container">
-				<div className="formDisplay-container">
-					<Form></Form>
-				</div>
-
+				<Form></Form>
 				<Resume></Resume>
 			</div>
 

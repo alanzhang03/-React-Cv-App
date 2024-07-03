@@ -1,35 +1,5 @@
-.personal {
-	border: solid black 1px;
-	border-radius: 10px;
-}
-.education {
-	border: solid black 1px;
-	border-radius: 10px;
-}
-.experience {
-	border: solid black 1px;
-	border-radius: 10px;
-}
-.form-header {
-	border: solid black 1px;
-	border-radius: 10px;
-}
 
-.personal-details-form {
-	display: flex;
-	flex-direction: column;
-	gap: 2vh;
 
-	margin: 0 auto;
-}
 
-.personal-details-form label {
-	font-size: 1.5rem;
-	font-weight: bold;
-}
 
-.personal-details-form input {
-	border-radius: 10px;
-	height: 4vh;
-	width: 20vw;
-}
+
