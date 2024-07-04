@@ -1,5 +1,11 @@
+.resume-container {
+	padding-left: 5vw;
+	padding-top: 2vh;
+}
+
 .resume {
-	width: 40vw;
+	width: 20vw;
 	height: 110vh;
 	border: black solid 2px;
+	padding-left: 20vw;
 }

@@ -1,3 +1,7 @@
+:root {
+	--input-color-bg: rgb(243, 244, 246, 255);
+}
+
 .personal {
 	border: solid black 1px;
 	border-radius: 10px;
@@ -21,4 +25,5 @@
 	border-radius: 15px;
 	height: 4vh;
 	width: 25vw;
+	background-color: var(--input-color-bg);
 }
