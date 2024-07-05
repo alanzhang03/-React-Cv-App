@@ -10,4 +10,5 @@ export default function ResumePreview({ data }) {
 			<p>Address: {data.address}</p>
 		</div>
 	);
-}
+};
+
