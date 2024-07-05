@@ -1,17 +1,12 @@
 import Footer from "./components/Footer";
 import Form from "./components/formInfo/Form";
 import "./assets/styles/App.css";
-import Resume from "./components/resume/Resume";
-
+import ResumeBuilder from "./components/resume/ResumeBuilder";
 
 function App() {
 	return (
 		<div className="App">
-			<div className="content-container">
-				<Form></Form>
-				<Resume></Resume>
-			</div>
-
+			<ResumeBuilder></ResumeBuilder>
 			<Footer></Footer>
 		</div>
 	);
