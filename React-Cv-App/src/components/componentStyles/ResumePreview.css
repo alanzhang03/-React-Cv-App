@@ -1,3 +1,28 @@
 .resume-preview {
 	padding-left: 5vw;
 }
+
+.resume-personal-container {
+	height: 13vh;
+	width: 35vw;
+	background-color: cadetblue;
+	color: white;
+}
+
+.full-name {
+	padding-top: 1.5vh;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+.info-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	font-size: 1.3rem;
+}
+
+.info-container li {
+	text-decoration: none;
+	list-style: none;
+}

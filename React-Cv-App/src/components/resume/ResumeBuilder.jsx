@@ -6,13 +6,11 @@ import ResumePreview from "./ResumePreview";
 import FormHeader from "../formInfo/FormHeader";
 import "../componentStyles/ResumeBuilder.css";
 
-
 export default function ResumeBuilder() {
 	const [fullName, setFullName] = useState("Alan Zhang");
 	const [email, setEmail] = useState("alan.s.zhang@gmail.com");
 	const [phone, setPhone] = useState("+1 484-860-0997");
 	const [address, setAddress] = useState("Philadelphia, PA");
-
 	const handleChangeFullName = (value) => {
 		setFullName(value);
 	};
@@ -34,10 +32,9 @@ export default function ResumeBuilder() {
 	};
 
 	return (
-        <div className="resume-builder">
-            
-            <div className="form-section">
-                <FormHeader></FormHeader>
+		<div className="resume-builder">
+			<div className="form-section">
+				<FormHeader className="form-header"></FormHeader>
 				<Personal
 					fullName={fullName}
 					email={email}

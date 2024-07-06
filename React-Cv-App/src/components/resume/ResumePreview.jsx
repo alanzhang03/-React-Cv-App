@@ -4,11 +4,14 @@ import "../componentStyles/ResumePreview.css";
 export default function ResumePreview({ data }) {
 	return (
 		<div className="resume-preview">
-			<h1>{data.fullName}</h1>
-			<p>Email: {data.email}</p>
-			<p>Phone: {data.phone}</p>
-			<p>Address: {data.address}</p>
+			<div className="resume-personal-container">
+				<h1 className="full-name">{data.fullName}</h1>
+				<div className="info-container">
+					<li>✉️ {data.email}</li>
+					<li>📞 {data.phone}</li>
+					<li>📍 {data.address}</li>
+				</div>
+			</div>
 		</div>
 	);
-};
-
+}

@@ -5,5 +5,8 @@
 }
 
 .form-section {
-	margin-top: 5vh;
+	display: flex;
+	flex-direction: column;
+	gap: 4vh;
+	padding-top: 3vh;
 }
