@@ -1,73 +1,99 @@
+import React, { useState, useRef } from "react";
 import "../componentStyles/Education.css";
-import React, { useState } from "react";
 
 export default function Education({
 	school,
 	handleSchoolChange,
-
 	degree,
 	handleDegreeChange,
-
 	startDate,
 	handleStartDateChange,
-
 	endDate,
 	handleEndDateChange,
-
 	location,
 	handleLocationChange,
 }) {
+	const [isFormVisible, setIsFormVisible] = useState(false);
+	const formRef = useRef(null);
+
+	const toggleFormVisibility = () => {
+		setIsFormVisible(!isFormVisible);
+	};
+
 	return (
 		<div className="education">
-			<form className="personal-details-form">
-				<h1>Education</h1>
+			<div className="education-header" onClick={toggleFormVisibility}>
+				<h1>
+					<span role="img" aria-label="education-icon">
+						🎓
+					</span>{" "}
+					Education
+				</h1>
+				<button
+					type="button"
+					className={`toggle-button ${isFormVisible ? "rotate" : ""}`}
+				>
+					▼
+				</button>
+			</div>
+			<div
+				className={`education-details-form-container ${
+					isFormVisible ? "visible" : "hidden"
+				}`}
+				style={{
+					maxHeight: isFormVisible
+						? `${formRef.current.scrollHeight}px`
+						: "0px",
+				}}
+			>
+				<form ref={formRef} className="education-details-form">
+					<label htmlFor="school">School</label>
+					<input
+						type="text"
+						id="school"
+						name="school"
+						value={school}
+						onChange={handleSchoolChange}
+						required
+					/>
 
-				<label htmlFor="school">School</label>
-				<input
-					type="text"
-					id="school"
-					name="school"
-					value={school}
-					onChange={handleSchoolChange}
-					required
-				/>
+					<label htmlFor="degree">Degree</label>
+					<input
+						type="text"
+						id="degree"
+						name="degree"
+						value={degree}
+						onChange={handleDegreeChange}
+					/>
 
-				<label htmlFor="degree">Degree</label>
-				<input
-					type="text"
-					id="degree"
-					name="degree"
-					value={degree}
-					onChange={handleDegreeChange}
-				/>
+					<label htmlFor="startDate">Start Date</label>
+					<input
+						type="date"
+						id="startDate"
+						name="startDate"
+						value={startDate}
+						onChange={handleStartDateChange}
+					/>
 
-				<label htmlFor="startDate">Start Date</label>
-				<input
-					type="date"
-					id="startDate"
-					name="startDate"
-					value={startDate}
-					onChange={handleStartDateChange}
-				/>
+					<label htmlFor="endDate">End Date</label>
+					<input
+						type="date"
+						id="endDate"
+						name="endDate"
+						value={endDate}
+						onChange={handleEndDateChange}
+					/>
 
-				<label htmlFor="endDate">End Date</label>
-				<input
-					type="date"
-					id="endDate"
-					name="endDate"
-					value={endDate}
-					onChange={handleEndDateChange}
-				/>
-
-				<label htmlFor="location">Location</label>
-				<input
-					type="location"
-					id="location"
-					name="location"
-					value={location}
-					onChange={handleLocationChange}
-				/>
-			</form>
+					<label htmlFor="location">Location</label>
+					<input
+						type="location"
+						id="location"
+						name="location"
+						value={location}
+						onChange={handleLocationChange}
+					/>
+				</form>
+			</div>
 		</div>
 	);
 }
