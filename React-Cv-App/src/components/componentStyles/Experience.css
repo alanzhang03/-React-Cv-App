@@ -7,4 +7,9 @@
 
 .job-description-box {
 	height: 12vh;
+	font-size: 0.95rem;
+	line-height: 1.5;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: rgb(243, 244, 246, 255);
 }
