@@ -33,3 +33,32 @@
 	height: 100vh;
 	margin-bottom: 5vh;
 }
+
+.resume-preview-container {
+	display: flex;
+	flex-direction: column;
+	padding-top: 3vh;
+}
+
+.resume-other-container h1 {
+	text-align: center;
+	height: auto;
+	background-color: rgb(243, 244, 246, 255);
+	margin: 3vh auto; /* Center the element */
+	width: 85%;
+}
+
+.education-info-container,
+.experience-info-container {
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	font-size: 1.1rem;
+}
+
+.education-school-and-degree {
+	padding-left: 1.5vw;
+}
+.education-school {
+	font-weight: bold;
+}
