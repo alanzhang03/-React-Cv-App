@@ -6,27 +6,11 @@ export default function Personal({
 	email,
 	phone,
 	address,
-	onChangeFullName,
-	onChangeEmail,
-	onChangePhone,
-	onChangeAddress,
+	handleChangeFullName,
+	handleChangeEmail,
+	handleChangeAddress,
+	handleChangePhone,
 }) {
-	const handleChangeFullName = (e) => {
-		onChangeFullName(e.target.value);
-	};
-
-	const handleChangeEmail = (e) => {
-		onChangeEmail(e.target.value);
-	};
-
-	const handleChangePhone = (e) => {
-		onChangePhone(e.target.value);
-	};
-
-	const handleChangeAddress = (e) => {
-		onChangeAddress(e.target.value);
-	};
-
 	return (
 		<div className="personal">
 			<form className="personal-details-form">
@@ -62,6 +46,7 @@ export default function Personal({
 
 				<label htmlFor="address">Address</label>
 				<input
+					className="address-input"
 					type="text"
 					id="address"
 					name="address"

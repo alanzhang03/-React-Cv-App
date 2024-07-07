@@ -11,24 +11,58 @@ export default function ResumeBuilder() {
 	const [email, setEmail] = useState("alan.s.zhang@gmail.com");
 	const [phone, setPhone] = useState("+1 484-860-0997");
 	const [address, setAddress] = useState("Philadelphia, PA");
-	const handleChangeFullName = (value) => {
-		setFullName(value);
-	};
-	const handleChangeEmail = (value) => {
-		setEmail(value);
-	};
-	const handleChangePhone = (value) => {
-		setPhone(value);
-	};
-	const handleChangeAddress = (value) => {
-		setAddress(value);
-	};
+
+	function handleChangeFullName(e) {
+		setFullName(e.target.value);
+	}
+
+	function handleChangeEmail(e) {
+		setEmail(e.target.value);
+	}
+	function handleChangePhone(e) {
+		setPhone(e.target.value);
+	}
+
+	function handleChangeAddress(e) {
+		setAddress(e.target.value);
+	}
+
+	const [school, setSchool] = useState("University of Maryland, College Park");
+	const [degree, setDegree] = useState("Bachelors in Computer Science");
+	const [startDate, setStartDate] = useState("08/2020");
+	const [endDate, setEndDate] = useState("present");
+	const [location, setLocation] = useState("College Park, MD");
+
+	function handleSchoolChange(e) {
+		setSchool(e.target.value);
+	}
+
+	function handleDegreeChange(e) {
+		setDegree(e.target.value);
+	}
+
+	function handleStartDateChange(e) {
+		setStartDate(e.target.value);
+	}
+
+	function handleEndDateChange(e) {
+		setEndDate(e.target.value);
+	}
+
+	function handleLocationChange(e) {
+		setLocation(e.target.value);
+	}
 
 	const formData = {
 		fullName,
 		email,
 		phone,
 		address,
+		school,
+		degree,
+		startDate,
+		endDate,
+		location,
 	};
 
 	return (
@@ -40,12 +74,23 @@ export default function ResumeBuilder() {
 					email={email}
 					phone={phone}
 					address={address}
-					onChangeFullName={handleChangeFullName}
-					onChangeEmail={handleChangeEmail}
-					onChangePhone={handleChangePhone}
-					onChangeAddress={handleChangeAddress}
+					handleChangeFullName={handleChangeFullName}
+					handleChangeEmail={handleChangeEmail}
+					handleChangePhone={handleChangePhone}
+					handleChangeAddress={handleChangeAddress}
 				/>
-				<Education />
+				<Education
+					school={school}
+					degree={degree}
+					startDate={startDate}
+					endDate={endDate}
+					location={location}
+					handleSchoolChange={handleSchoolChange}
+					handleDegreeChange={handleDegreeChange}
+					handleStartDateChange={handleStartDateChange}
+					handleEndDateChange={handleEndDateChange}
+					handleLocationChange={handleLocationChange}
+				/>
 				<Experience />
 			</div>
 			<div className="resume-preview">

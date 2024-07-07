@@ -6,13 +6,13 @@
 	border: solid black 1px;
 	border-radius: 10px;
 	padding: 1rem;
+	background-color: white;
 }
 
 .personal-details-form {
 	display: flex;
 	flex-direction: column;
 	gap: 2vh;
-	margin: 0 auto;
 }
 
 .personal-details-form label {
@@ -25,4 +25,8 @@
 	height: 4vh;
 	width: 25vw;
 	background-color: var(--input-color-bg);
+}
+
+.address-input {
+	margin-bottom: 2vh;
 }
