@@ -29,7 +29,7 @@ export default function ResumeBuilder() {
 
 	const [school, setSchool] = useState("University of Maryland, College Park");
 	const [degree, setDegree] = useState("Bachelors in Computer Science");
-	const [startDate, setStartDate] = useState("08/2020");
+	const [startDate, setStartDate] = useState("2022-08-28");
 	const [endDate, setEndDate] = useState("present");
 	const [location, setLocation] = useState("College Park, MD");
 
@@ -53,6 +53,39 @@ export default function ResumeBuilder() {
 		setLocation(e.target.value);
 	}
 
+	const [company, setCompany] = useState("MindHome");
+	const [position, setPosition] = useState("Software Developer Intern");
+	const [startDateExp, setStartDateExp] = useState("2024-04-25");
+	const [endDateExp, setEndDateExp] = useState("present");
+	const [locationExp, setLocationExp] = useState("Remote");
+	const [jobDescription, setJobDescription] = useState(
+		"Worked on updates and enhancements to the company website, leveraging React for web application portions and React Native for mobile optimizations. Contributed personal insights and recommendations for leveraging React to enhance aesthetics and functionality of our web application. Collaborated closely with a team of interns to develop and refine React application projects, enhancing project outcomes through effective teamwork."
+	);
+
+	function handleCompanyChange(e) {
+		setCompany(e.target.value);
+	}
+
+	function handlePositionChange(e) {
+		setPosition(e.target.value);
+	}
+
+	function handleStartDateExpChange(e) {
+		setStartDateExp(e.target.value);
+	}
+
+	function handleEndDateExpChange(e) {
+		setEndDateExp(e.target.value);
+	}
+
+	function handleLocationExpChange(e) {
+		setLocationExp(e.target.value);
+	}
+
+	function handleJobDescriptionChange(e) {
+		setJobDescription(e.target.value);
+	}
+
 	const formData = {
 		fullName,
 		email,
@@ -63,6 +96,12 @@ export default function ResumeBuilder() {
 		startDate,
 		endDate,
 		location,
+		company,
+		position,
+		startDateExp,
+		endDateExp,
+		locationExp,
+		jobDescription,
 	};
 
 	return (
@@ -91,7 +130,20 @@ export default function ResumeBuilder() {
 					handleEndDateChange={handleEndDateChange}
 					handleLocationChange={handleLocationChange}
 				/>
-				<Experience />
+				<Experience
+					company={company}
+					position={position}
+					startDateExp={startDateExp}
+					endDateExp={endDateExp}
+					locationExp={locationExp}
+					jobDescription={jobDescription}
+					handleComkpanyChange={handleCompanyChange}
+					handlePositionChange={handlePositionChange}
+					handleStartDateExpChange={handleStartDateExpChange}
+					handleEndDateExpChange={handleEndDateExpChange}
+					handleLocationExpChange={handleLocationExpChange}
+					handleJobDescriptionChange={handleJobDescriptionChange}
+				/>
 			</div>
 			<div className="resume-preview">
 				<ResumePreview data={formData} />

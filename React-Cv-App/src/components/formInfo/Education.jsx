@@ -3,14 +3,18 @@ import React, { useState } from "react";
 
 export default function Education({
 	school,
-	degree,
-	startDate,
-	endDate,
-	location,
 	handleSchoolChange,
+
+	degree,
 	handleDegreeChange,
+
+	startDate,
 	handleStartDateChange,
+
+	endDate,
 	handleEndDateChange,
+
+	location,
 	handleLocationChange,
 }) {
 	return (

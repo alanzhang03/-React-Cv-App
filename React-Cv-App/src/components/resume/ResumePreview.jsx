@@ -13,11 +13,24 @@ export default function ResumePreview({ data }) {
 				</div>
 			</div>
 			<div className="resume-other-container">
-				<li> {data.school}</li>
-				<li> {data.degree}</li>
-				<li> {data.startDate}</li>
-				<li> {data.endDate}</li>
-				<p>{data.location}</p>
+				<div className="education-section-resume">
+					<h1>Education</h1>
+					<li> {data.school}</li>
+					<li> {data.degree}</li>
+					<li> {data.startDate}</li>
+					<li> {data.endDate}</li>
+					<p>{data.location}</p>
+				</div>
+
+				<div className="experience-section-resume">
+					<h1>Experience</h1>
+					<p>{data.company}</p>
+					<p>{data.position}</p>
+					<p>{data.startDateExp}</p>
+					<p>{data.endDateExp}</p>
+					<p>{data.locationExp}</p>
+					<p>{data.jobDescription}</p>
+				</div>
 			</div>
 		</div>
 	);
