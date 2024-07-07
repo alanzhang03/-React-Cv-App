@@ -1,8 +1,8 @@
 .experience {
-	border: solid black 1px;
 	border-radius: 10px;
 	padding: 1rem;
 	background-color: white;
+	margin-bottom: 3vh;
 }
 
 .job-description-box {

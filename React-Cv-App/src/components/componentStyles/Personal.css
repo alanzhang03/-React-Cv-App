@@ -3,7 +3,6 @@
 }
 
 .personal {
-	border: solid black 1px;
 	border-radius: 10px;
 	padding: 1rem;
 	background-color: white;
@@ -25,6 +24,13 @@
 	height: 4vh;
 	width: 25vw;
 	background-color: var(--input-color-bg);
+	border: 2px solid transparent;
+	transition: border-color 0.5s;
+}
+
+.personal-details-form input:focus {
+	border-color: blue;
+	outline: none;
 }
 
 .address-input {

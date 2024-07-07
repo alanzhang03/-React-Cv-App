@@ -46,6 +46,7 @@
 	background-color: rgb(243, 244, 246, 255);
 	margin: 3vh auto; /* Center the element */
 	width: 85%;
+	font-size: 1.8rem;
 }
 
 .education-info-container,
