@@ -15,14 +15,21 @@
 	font-size: 2.5rem;
 }
 
-.info-container {
+.personal-info-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	font-size: 1.3rem;
 }
 
-.info-container li {
+.personal-info-container li {
 	text-decoration: none;
 	list-style: none;
+}
+
+.resume-other-container {
+	background-color: white;
+	width: 35vw;
+	height: 100vh;
+	margin-bottom: 5vh;
 }
