@@ -3,7 +3,7 @@
 }
 
 .resume-personal-container {
-	height: 13vh;
+	height: 15vh;
 	width: 35vw;
 	background-color: cadetblue;
 	color: white;
@@ -16,10 +16,11 @@
 }
 
 .personal-info-container {
+	margin-bottom: 2vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 }
 
 .personal-info-container li {
