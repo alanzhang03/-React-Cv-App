@@ -18,7 +18,7 @@ export default function ResumePreview({ data }) {
 						<h1 className="education-header">Education</h1>
 						<div className="education-info-container">
 							<div className="education-dates-and-location">
-								<div>
+								<div className="dates">
 									{data.startDate} - {data.endDate}
 								</div>
 								<div>{data.location}</div>
@@ -34,14 +34,17 @@ export default function ResumePreview({ data }) {
 						<h1 className="experience-header">Experience</h1>
 						<div className="experience-info-container">
 							<div className="experience-dates-and-location">
-								<p>{data.startDateExp}</p>
-								<p>{data.endDateExp}</p>
-								<p>{data.locationExp}</p>
+								<div className="dates">
+									{data.startDateExp} - {data.endDateExp}
+								</div>
+								<div>{data.locationExp}</div>
 							</div>
 							<div className="experience-company-position-jobDescription">
-								<p>{data.company}</p>
-								<p>{data.position}</p>
-								<p>{data.jobDescription}</p>
+								<div className="experience-company">{data.company}</div>
+								<div className="experience-position">{data.position}</div>
+								<div className="experience-jobDescription">
+									{data.jobDescription}
+								</div>
 							</div>
 						</div>
 					</div>

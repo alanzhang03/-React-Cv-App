@@ -59,6 +59,22 @@
 .education-school-and-degree {
 	padding-left: 1.5vw;
 }
-.education-school {
+.education-school,
+.experience-position,
+.experience-company {
 	font-weight: bold;
+	padding-bottom: 0.5vh;
+}
+
+.experience-jobDescription {
+	padding-bottom: 0.5vh;
+}
+
+.dates {
+	padding-bottom: 0.5vh;
+}
+
+.experience-company-position-jobDescription {
+	padding-left: 1.5vw;
+	max-width: 70%;
 }

@@ -59,7 +59,7 @@ export default function ResumeBuilder() {
 	const [endDateExp, setEndDateExp] = useState("present");
 	const [locationExp, setLocationExp] = useState("Remote");
 	const [jobDescription, setJobDescription] = useState(
-		"Worked on updates and enhancements to the company website, leveraging React for web application portions and React Native for mobile optimizations. Contributed personal insights and recommendations for leveraging React to enhance aesthetics and functionality of our web application. Collaborated closely with a team of interns to develop and refine React application projects, enhancing project outcomes through effective teamwork."
+		"Worked on updates and enhancements to the company website, leveraging React for web application portions and React Native for mobile optimizations. Contributed personal insights and recommendations for leveraging React to enhance aesthetics and functionality of our web application."
 	);
 
 	function handleCompanyChange(e) {
