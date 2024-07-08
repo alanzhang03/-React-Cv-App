@@ -56,6 +56,7 @@ export default function Experience({
 						name="company"
 						value={company}
 						onChange={handleCompanyChange}
+						placeholder="Enter Company Name"
 					/>
 
 					<label htmlFor="position">Position</label>
@@ -65,24 +66,27 @@ export default function Experience({
 						name="position"
 						value={position}
 						onChange={handlePositionChange}
+						placeholder="Enter Position Title"
 					/>
 
 					<label htmlFor="startDateExp">Start Date</label>
 					<input
-						type="date"
+						type="text"
 						id="startDateExp"
 						name="startDateExp"
 						value={startDateExp}
 						onChange={handleStartDateExpChange}
+						
 					/>
 
 					<label htmlFor="endDateExp">End Date</label>
 					<input
-						type="date"
+						type="text"
 						id="endDateExp"
 						name="endDateExp"
 						value={endDateExp}
 						onChange={handleEndDateExpChange}
+
 					/>
 
 					<label htmlFor="locationExp">Location</label>
@@ -92,6 +96,7 @@ export default function Experience({
 						name="locationExp"
 						value={locationExp}
 						onChange={handleLocationExpChange}
+						placeholder="Enter Location"
 					/>
 
 					<label htmlFor="jobDescription">Job Description</label>
@@ -101,6 +106,7 @@ export default function Experience({
 						name="jobDescription"
 						value={jobDescription}
 						onChange={handleJobDescriptionChange}
+						placeholder="Enter description"
 					/>
 				</form>
 			</div>

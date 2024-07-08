@@ -52,6 +52,7 @@ export default function Personal({
 						name="fullName"
 						value={fullName}
 						onChange={handleChangeFullName}
+						placeholder="Enter first and last name"
 						required
 					/>
 
@@ -62,6 +63,7 @@ export default function Personal({
 						name="email"
 						value={email}
 						onChange={handleChangeEmail}
+						placeholder="Enter Email Address"
 					/>
 
 					<label htmlFor="phone">Phone Number</label>
@@ -71,6 +73,7 @@ export default function Personal({
 						name="phone"
 						value={phone}
 						onChange={handleChangePhone}
+						placeholder="Enter Phone number"
 					/>
 
 					<label htmlFor="address">Address</label>
@@ -81,6 +84,7 @@ export default function Personal({
 						name="address"
 						value={address}
 						onChange={handleChangeAddress}
+						placeholder="City, State"
 					/>
 				</form>
 			</div>

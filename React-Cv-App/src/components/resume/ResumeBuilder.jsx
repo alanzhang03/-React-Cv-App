@@ -4,6 +4,7 @@ import Experience from "../formInfo/Experience";
 import Personal from "../formInfo/Personal";
 import ResumePreview from "./ResumePreview";
 import FormHeader from "../formInfo/FormHeader";
+import Skills from "../formInfo/Skills";
 import "../componentStyles/ResumeBuilder.css";
 
 export default function ResumeBuilder() {
@@ -29,7 +30,7 @@ export default function ResumeBuilder() {
 
 	const [school, setSchool] = useState("University of Maryland, College Park");
 	const [degree, setDegree] = useState("Bachelors in Computer Science");
-	const [startDate, setStartDate] = useState("2022-08-28");
+	const [startDate, setStartDate] = useState("08/2022");
 	const [endDate, setEndDate] = useState("present");
 	const [location, setLocation] = useState("College Park, MD");
 
@@ -55,7 +56,7 @@ export default function ResumeBuilder() {
 
 	const [company, setCompany] = useState("MindHome");
 	const [position, setPosition] = useState("Software Developer Intern");
-	const [startDateExp, setStartDateExp] = useState("2024-04-25");
+	const [startDateExp, setStartDateExp] = useState("04/2024");
 	const [endDateExp, setEndDateExp] = useState("present");
 	const [locationExp, setLocationExp] = useState("Remote");
 	const [jobDescription, setJobDescription] = useState(
@@ -85,6 +86,8 @@ export default function ResumeBuilder() {
 	function handleJobDescriptionChange(e) {
 		setJobDescription(e.target.value);
 	}
+
+
 
 	const formData = {
 		fullName,
@@ -137,12 +140,17 @@ export default function ResumeBuilder() {
 					endDateExp={endDateExp}
 					locationExp={locationExp}
 					jobDescription={jobDescription}
-					handleComkpanyChange={handleCompanyChange}
+					handleCompanyChange={handleCompanyChange}
 					handlePositionChange={handlePositionChange}
 					handleStartDateExpChange={handleStartDateExpChange}
 					handleEndDateExpChange={handleEndDateExpChange}
 					handleLocationExpChange={handleLocationExpChange}
 					handleJobDescriptionChange={handleJobDescriptionChange}
+				/>
+				<Skills
+				
+				
+				
 				/>
 			</div>
 			<div className="resume-preview">

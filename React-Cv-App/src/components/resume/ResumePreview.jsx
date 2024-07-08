@@ -13,9 +13,10 @@ export default function ResumePreview({ data }) {
 						<li>📍 {data.address}</li>
 					</div>
 				</div>
+
 				<div className="resume-other-container">
 					<div className="education-section-resume">
-						<h1 className="education-header">Education</h1>
+						<h1 className="education-header-resume-preview">Education</h1>
 						<div className="education-info-container">
 							<div className="education-dates-and-location">
 								<div className="dates">
@@ -31,7 +32,7 @@ export default function ResumePreview({ data }) {
 					</div>
 
 					<div className="experience-section-resume">
-						<h1 className="experience-header">Experience</h1>
+						<h1 className="experience-header-resume-preview">Experience</h1>
 						<div className="experience-info-container">
 							<div className="experience-dates-and-location">
 								<div className="dates">
@@ -47,6 +48,11 @@ export default function ResumePreview({ data }) {
 								</div>
 							</div>
 						</div>
+					</div>
+
+					<div className="skills-section-resume">
+						<h1 className="skills-header-resume-preview">Skills</h1>
+
 					</div>
 				</div>
 			</div>

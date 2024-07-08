@@ -45,10 +45,12 @@
 	text-align: center;
 	height: auto;
 	background-color: rgb(243, 244, 246, 255);
-	margin: 3vh auto; /* Center the element */
+	margin: 3vh auto;
 	width: 85%;
-	font-size: 1.8rem;
+	font-size: 1.7rem;
 }
+
+
 
 .education-info-container,
 .experience-info-container {

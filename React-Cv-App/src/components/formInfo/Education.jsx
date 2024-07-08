@@ -54,6 +54,7 @@ export default function Education({
 						name="school"
 						value={school}
 						onChange={handleSchoolChange}
+						placeholder="Enter school/university name"
 						required
 					/>
 
@@ -64,20 +65,22 @@ export default function Education({
 						name="degree"
 						value={degree}
 						onChange={handleDegreeChange}
+						placeholder="Enter Degree / Field of study"
 					/>
 
 					<label htmlFor="startDate">Start Date</label>
 					<input
-						type="date"
+						type="text"
 						id="startDate"
 						name="startDate"
 						value={startDate}
 						onChange={handleStartDateChange}
+						
 					/>
 
 					<label htmlFor="endDate">End Date</label>
 					<input
-						type="date"
+						type="text"
 						id="endDate"
 						name="endDate"
 						value={endDate}
