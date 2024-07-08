@@ -76,7 +76,7 @@ export default function Experience({
 						name="startDateExp"
 						value={startDateExp}
 						onChange={handleStartDateExpChange}
-						
+						placeholder="Enter Start Date"
 					/>
 
 					<label htmlFor="endDateExp">End Date</label>
@@ -86,7 +86,7 @@ export default function Experience({
 						name="endDateExp"
 						value={endDateExp}
 						onChange={handleEndDateExpChange}
-
+						placeholder="Enter End Date"
 					/>
 
 					<label htmlFor="locationExp">Location</label>

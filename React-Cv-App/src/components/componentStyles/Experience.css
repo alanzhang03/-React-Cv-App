@@ -29,7 +29,7 @@
     font-size: 1.5rem;
     cursor: pointer;
     transition: transform 0.3s;
-    margin-left: auto; /* Aligns the button to the far right */
+    margin-left: auto; 
 }
 
 .rotate {

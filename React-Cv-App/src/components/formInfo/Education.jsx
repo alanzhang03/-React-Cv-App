@@ -75,7 +75,7 @@ export default function Education({
 						name="startDate"
 						value={startDate}
 						onChange={handleStartDateChange}
-						
+						placeholder="Enter Start Date"
 					/>
 
 					<label htmlFor="endDate">End Date</label>
@@ -85,6 +85,7 @@ export default function Education({
 						name="endDate"
 						value={endDate}
 						onChange={handleEndDateChange}
+						placeholder="Enter End Date"
 					/>
 
 					<label htmlFor="location">Location</label>
