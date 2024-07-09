@@ -87,7 +87,32 @@ export default function ResumeBuilder() {
 		setJobDescription(e.target.value);
 	}
 
+	const [programmingLanguages, setProgrammingLanguages] = useState(
+		"JavaScript, Python, Java, C, C#, Rust, Ocaml"
+	);
+	const [webTech, setWebTech] = useState(
+		"React.js, Node.js, HTML, CSS, Hooks API"
+	);
+	const [softwareTool, setSoftwareTool] = useState(
+		"MATLAB, RStudio, Github, Microsoft Office, Excel"
+	);
+	const [concepts, setConcepts] = useState("Data Structures, Algorithms, ...");
 
+	function handleProgrammingLanguagesChange(e) {
+		setProgrammingLanguages(e.target.value);
+	}
+
+	function handleWebTechChange(e) {
+		setWebTech(e.target.value);
+	}
+
+	function handleSoftwareToolChange(e) {
+		setSoftwareTool(e.target.value);
+	}
+
+	function handleConceptsChange(e) {
+		setConcepts(e.target.value);
+	}
 
 	const formData = {
 		fullName,
@@ -105,6 +130,10 @@ export default function ResumeBuilder() {
 		endDateExp,
 		locationExp,
 		jobDescription,
+		programmingLanguages,
+		webTech,
+		softwareTool,
+		concepts,
 	};
 
 	return (
@@ -148,9 +177,14 @@ export default function ResumeBuilder() {
 					handleJobDescriptionChange={handleJobDescriptionChange}
 				/>
 				<Skills
-				
-				
-				
+					programmingLanguages={programmingLanguages}
+					webTech={webTech}
+					softwareTool={softwareTool}
+					concepts={concepts}
+					handleProgrammingLanguagesChange={handleProgrammingLanguagesChange}
+					handleWebTechChange={handleWebTechChange}
+					handleSoftwareToolChange={handleSoftwareToolChange}
+					handleConceptsChange={handleConceptsChange}
 				/>
 			</div>
 			<div className="resume-preview">

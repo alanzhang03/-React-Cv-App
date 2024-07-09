@@ -51,8 +51,13 @@ export default function ResumePreview({ data }) {
 					</div>
 
 					<div className="skills-section-resume">
-						<h1 className="skills-header-resume-preview">Skills</h1>
-
+						<h1 className="skills-header-resume-preview">
+							<p>{data.webTech} </p>
+							<p>{data.programmingLanguages}</p>
+							<p>{data.webTech}</p>
+							<p>{data.softwareTool}</p>
+							<p>{data.Concepts}</p>
+						</h1>
 					</div>
 				</div>
 			</div>
