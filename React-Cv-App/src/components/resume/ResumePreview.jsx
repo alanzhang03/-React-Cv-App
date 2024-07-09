@@ -54,9 +54,8 @@ export default function ResumePreview({ data }) {
 						<h1 className="skills-header-resume-preview">
 							<p>{data.webTech} </p>
 							<p>{data.programmingLanguages}</p>
-							<p>{data.webTech}</p>
 							<p>{data.softwareTool}</p>
-							<p>{data.Concepts}</p>
+							<p>{data.concepts}</p>
 						</h1>
 					</div>
 				</div>
