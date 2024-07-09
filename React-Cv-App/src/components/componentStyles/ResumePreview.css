@@ -50,14 +50,33 @@
 	font-size: 1.7rem;
 }
 
-
-
 .education-info-container,
 .experience-info-container {
 	width: 85%;
 	margin: 0 auto;
 	display: flex;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
+}
+
+.skills-section-info-container {
+	width: 85%;
+	margin: 0 auto;
+	font-size: 1.2rem;
+}
+
+.webtech,
+.programLanguage,
+.softwareTool,
+.concepts {
+	display: flex;
+}
+.webTech-label,
+.programLanguage-label,
+.softwareTool-label,
+.concepts-label {
+	font-weight: bold;
+	margin-bottom: 2vh;
+	margin-right: 0.3vw;
 }
 
 .education-school-and-degree {
