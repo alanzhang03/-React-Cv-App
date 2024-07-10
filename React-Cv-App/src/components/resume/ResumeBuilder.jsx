@@ -96,7 +96,7 @@ export default function ResumeBuilder() {
 	const [softwareTool, setSoftwareTool] = useState(
 		"MATLAB, RStudio, Github, Microsoft Office, Excel"
 	);
-	const [concepts, setConcepts] = useState("Data Structures, Algorithms, ...");
+	const [concepts, setConcepts] = useState("Data Structures, Algorithms, Object-Oriented Programming");
 
 	function handleProgrammingLanguagesChange(e) {
 		setProgrammingLanguages(e.target.value);

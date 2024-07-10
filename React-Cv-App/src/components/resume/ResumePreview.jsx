@@ -54,16 +54,16 @@ export default function ResumePreview({ data }) {
 						<h1 className="skills-header-resume-preview">Skills</h1>
 
 						<div className="skills-section-info-container">
-							<div className="webtech">
-								<label className="webTech-label">WebTech:</label>
-								<div>{data.webTech} </div>
-							</div>
-
 							<div className="programLanguage">
 								<label className="programLanguage-label">
 									Programming Languages:
 								</label>
 								<div>{data.programmingLanguages}</div>
+							</div>
+							
+							<div className="webtech">
+								<label className="webTech-label">WebTech:</label>
+								<div>{data.webTech} </div>
 							</div>
 
 							<div className="softwareTool">
@@ -75,7 +75,6 @@ export default function ResumePreview({ data }) {
 								<label className="concepts-label">Concepts:</label>
 								<div>{data.concepts}</div>
 							</div>
-							
 						</div>
 					</div>
 				</div>
