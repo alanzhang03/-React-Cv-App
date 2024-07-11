@@ -60,7 +60,7 @@ export default function ResumePreview({ data }) {
 								</label>
 								<div>{data.programmingLanguages}</div>
 							</div>
-							
+
 							<div className="webtech">
 								<label className="webTech-label">WebTech:</label>
 								<div>{data.webTech} </div>
@@ -77,6 +77,11 @@ export default function ResumePreview({ data }) {
 							</div>
 						</div>
 					</div>
+
+					<div>{data.projectLanguage}</div>
+					<div>{data.projectDescription}</div>
+
+					<div>{data.projectName}</div>
 				</div>
 			</div>
 		</div>
