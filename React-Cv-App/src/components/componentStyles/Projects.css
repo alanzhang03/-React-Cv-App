@@ -80,6 +80,8 @@
 }
 
 .projects-form textarea {
-	height: 10vh; /* Adjust the height as needed */
-	resize: vertical; /* Allow vertical resizing */
+    height: 12vh;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 10px;
 }

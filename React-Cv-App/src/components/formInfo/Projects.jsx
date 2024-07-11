@@ -3,8 +3,10 @@ import "../componentStyles/Projects.css";
 
 export default function Projects({
 	projectName,
+	projectLink,
 	projectLanguage,
 	projectDescription,
+	handleChangeProjectLink,
 	handleChangeProjectName,
 	handleChangeProjectLanguage,
 	handleChangeProjectDescription,
@@ -52,6 +54,16 @@ export default function Projects({
 						onChange={handleChangeProjectName}
 						placeholder="Enter project name"
 						required
+					/>
+
+					<label htmlFor="projectLink">Project Link</label>
+					<input
+						type="text"
+						id="projectLink"
+						name="projectLink"
+						value={projectLink}
+						onChange={handleChangeProjectLink}
+						placeholder="Enter project Link (web address, Github, etc.)"
 					/>
 
 					<label htmlFor="projectLanguage">Project Language</label>

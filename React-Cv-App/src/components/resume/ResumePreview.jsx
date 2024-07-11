@@ -50,6 +50,35 @@ export default function ResumePreview({ data }) {
 						</div>
 					</div>
 
+					<div className="projects-section-resume">
+						<h1 className="projects-header-resume-preview">Projects</h1>
+						<div className="projects-info-container">
+							<div className="projects-link">
+								<div className="links">
+									<a
+										href={data.projectLink}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										link to project
+									</a>
+								</div>
+							</div>
+							<div className="experience-company-position-jobDescription">
+								<div className="experience-company">{data.company}</div>
+								<div className="experience-position">{data.position}</div>
+								<div className="experience-jobDescription">
+									{data.jobDescription}
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>{data.projectLanguage}</div>
+					<div>{data.projectDescription}</div>
+
+					<div>{data.projectName}</div>
+
 					<div className="skills-section-resume">
 						<h1 className="skills-header-resume-preview">Skills</h1>
 
@@ -77,11 +106,6 @@ export default function ResumePreview({ data }) {
 							</div>
 						</div>
 					</div>
-
-					<div>{data.projectLanguage}</div>
-					<div>{data.projectDescription}</div>
-
-					<div>{data.projectName}</div>
 				</div>
 			</div>
 		</div>

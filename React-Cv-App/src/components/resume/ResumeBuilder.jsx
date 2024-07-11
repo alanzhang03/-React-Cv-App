@@ -118,15 +118,22 @@ export default function ResumeBuilder() {
 	}
 
 	const [projectName, setProjectName] = useState("Personal Portfolio");
+	const [projectLink, setProjectLink] = useState(
+		"https://alanzhang.onrender.com/"
+	);
 	const [projectLanguage, setProjectLanguage] = useState(
 		"React, Node, Javascript, HTML, CSS"
 	);
 	const [projectDescription, setProjectDescription] = useState(
-		"Crafted an online portfolio to showcase my full stack development projects, technical skills, and personal life. Implemented dynamic routing in a React.js single-page application for seamless navigation and view transitions. Leveraged advanced JavaScript for interactive elements and enhanced functionality. Developed a Node.js backend for the contact form, with form validation middleware and a secure email API, improving message processing, reliability, and user experience."
+		"Crafted an online portfolio to showcase my full stack development projects, technical skills, and personal life. Implemented dynamic routing in a React.js single-page application. Leveraged advanced JavaScript for interactive elements and enhanced functionality. Developed a Node.js backend for the contact form, with form validation middleware and a secure email API, improving message processing, reliability, and user experience."
 	);
 
 	function handleChangeProjectName(e) {
 		setProjectName(e.target.value);
+	}
+
+	function handleChangeProjectLink(e) {
+		setProjectLink(e.target.value);
 	}
 
 	function handleChangeProjectLanguage(e) {
@@ -157,6 +164,7 @@ export default function ResumeBuilder() {
 		softwareTool,
 		concepts,
 		projectName,
+		projectLink,
 		projectLanguage,
 		projectDescription,
 	};
@@ -213,9 +221,11 @@ export default function ResumeBuilder() {
 				/>
 				<Projects
 					projectName={projectName}
+					projectLink={projectLink}
 					projectLanguage={projectLanguage}
 					projectDescription={projectDescription}
 					handleChangeProjectName={handleChangeProjectName}
+					handleChangeProjectLink={handleChangeProjectLink}
 					handleChangeProjectLanguage={handleChangeProjectLanguage}
 					handleChangeProjectDescription={handleChangeProjectDescription}
 				/>
