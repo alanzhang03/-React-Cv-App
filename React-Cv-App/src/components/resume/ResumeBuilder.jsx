@@ -5,6 +5,7 @@ import Personal from "../formInfo/Personal";
 import ResumePreview from "./ResumePreview";
 import FormHeader from "../formInfo/FormHeader";
 import Skills from "../formInfo/Skills";
+import Projects from "../formInfo/Projects";
 import "../componentStyles/ResumeBuilder.css";
 
 export default function ResumeBuilder() {
@@ -96,7 +97,9 @@ export default function ResumeBuilder() {
 	const [softwareTool, setSoftwareTool] = useState(
 		"MATLAB, RStudio, Github, Microsoft Office, Excel"
 	);
-	const [concepts, setConcepts] = useState("Data Structures, Algorithms, Object-Oriented Programming");
+	const [concepts, setConcepts] = useState(
+		"Data Structures, Algorithms, Object-Oriented Programming"
+	);
 
 	function handleProgrammingLanguagesChange(e) {
 		setProgrammingLanguages(e.target.value);
@@ -112,6 +115,25 @@ export default function ResumeBuilder() {
 
 	function handleConceptsChange(e) {
 		setConcepts(e.target.value);
+	}
+
+	const [projectName, setProjectName] = useState("Personal Portfolio");
+	const [projectLanguage, setProjectLanguage] = useState(
+		"React, Node, Javascript, HTML, CSS"
+	);
+	const [projectDescription, setProjectDescription] = useState(
+		"Crafted an online portfolio to showcase my full stack development projects, technical skills, and personal life. Implemented dynamic routing in a React.js single-page application for seamless navigation and view transitions. Leveraged advanced JavaScript for interactive elements and enhanced functionality. Developed a Node.js backend for the contact form, with form validation middleware and a secure email API, improving message processing, reliability, and user experience."
+	);
+
+	function handleChangeProjectName(e) {
+		setProjectName(e.target.value);
+	}
+
+	function handleChangeProjectLanguage(e) {
+		setProjectLanguage(e.target.value);
+	}
+	function handleChangeProjectDescription(e) {
+		setProjectDescription(e.target.value);
 	}
 
 	const formData = {
@@ -134,6 +156,9 @@ export default function ResumeBuilder() {
 		webTech,
 		softwareTool,
 		concepts,
+		projectName,
+		projectLanguage,
+		projectDescription,
 	};
 
 	return (
@@ -185,6 +210,14 @@ export default function ResumeBuilder() {
 					handleWebTechChange={handleWebTechChange}
 					handleSoftwareToolChange={handleSoftwareToolChange}
 					handleConceptsChange={handleConceptsChange}
+				/>
+				<Projects
+					projectName={projectName}
+					projectLanguage={projectLanguage}
+					projectDescription={projectDescription}
+					handleChangeProjectName={handleChangeProjectName}
+					handleChangeProjectLanguage={handleChangeProjectLanguage}
+					handleChangeProjectDescription={handleChangeProjectDescription}
 				/>
 			</div>
 			<div className="resume-preview">
