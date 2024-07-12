@@ -50,37 +50,8 @@ export default function ResumePreview({ data }) {
 						</div>
 					</div>
 
-					<div className="projects-section-resume">
-						<h1 className="projects-header-resume-preview">Projects</h1>
-						<div className="projects-info-container">
-							<div className="projects-link">
-								<div className="links">
-									<a
-										href={data.projectLink}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										link to project
-									</a>
-								</div>
-							</div>
-							<div className="experience-company-position-jobDescription">
-								<div className="experience-company">{data.company}</div>
-								<div className="experience-position">{data.position}</div>
-								<div className="experience-jobDescription">
-									{data.jobDescription}
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div>{data.projectLanguage}</div>
-					<div>{data.projectDescription}</div>
-
-					<div>{data.projectName}</div>
-
 					<div className="skills-section-resume">
-						<h1 className="skills-header-resume-preview">Skills</h1>
+						<h1 className="skills-header-resume-preview">Technical Skills</h1>
 
 						<div className="skills-section-info-container">
 							<div className="programLanguage">
@@ -103,6 +74,30 @@ export default function ResumePreview({ data }) {
 							<div className="concepts">
 								<label className="concepts-label">Concepts:</label>
 								<div>{data.concepts}</div>
+							</div>
+						</div>
+					</div>
+
+					<div className="projects-section-resume">
+						<h1 className="projects-header-resume-preview">Projects</h1>
+						<div className="projects-info-container">
+							<div className="projects-name-and-languages">
+								<div className="links">
+									<a
+										href={data.projectLink}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="links-text"
+									>
+										{data.projectName}
+									</a>
+								</div>
+								<div className="divider">|</div>
+								<div>{data.projectLanguage}</div>
+							</div>
+
+							<div className="project-description">
+								{data.projectDescription}
 							</div>
 						</div>
 					</div>
