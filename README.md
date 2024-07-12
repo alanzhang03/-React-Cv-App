@@ -1,4 +1,4 @@
-# Resume/Cv app builder
+# Resume Builder
 
 This project is a web application that allows users to build and customize their resumes. Users can input their personal information, education, experience, skills, and projects, and see a live preview of their resume. The application also includes functionality to clear the resume data and load example data.
 
