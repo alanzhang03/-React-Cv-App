@@ -9,6 +9,66 @@ import Projects from "../formInfo/Projects";
 import "../componentStyles/ResumeBuilder.css";
 
 export default function ResumeBuilder() {
+	const initialState = {
+		fullName: "Alan Zhang",
+		email: "alan.s.zhang@gmail.com",
+		phone: "+1 484-860-0997",
+		address: "Philadelphia, PA",
+		school: "University of Maryland, College Park",
+		degree: "Bachelors in Computer Science",
+		startDate: "08/2022",
+		endDate: "present",
+		location: "College Park, MD",
+		company: "MindHome",
+		position: "Software Developer Intern",
+		startDateExp: "04/2024",
+		endDateExp: "present",
+		locationExp: "Remote",
+		jobDescription:
+			"Worked on updates and enhancements to the company website, leveraging React for web application portions and React Native for mobile optimizations. Contributed personal insights and recommendations for leveraging React to enhance aesthetics and functionality of our web application.",
+		programmingLanguages: "JavaScript, Python, Java, C, C#, Rust, Ocaml",
+		webTech: "React.js, Node.js, HTML, CSS, Hooks API",
+		softwareTool: "MATLAB, RStudio, Github, Microsoft Office, Excel",
+		concepts: "Data Structures, Algorithms, Object-Oriented Programming",
+		projectName: "Personal Portfolio",
+		projectLink: "https://alanzhang.onrender.com/",
+		projectLanguage: "React, Node, Javascript, HTML, CSS",
+		projectDescription:
+			"Crafted an online portfolio to showcase my full stack development projects, technical skills, and personal life. Implemented dynamic routing in a React.js single-page application. Leveraged advanced JavaScript for interactive elements and enhanced functionality. Developed a Node.js backend for the contact form, with form validation middleware and a secure email API, improving message processing, reliability, and user experience.",
+	};
+
+	const [formData, setFormData] = useState(initialState);
+	function clearResume() {
+		setFormData({
+			fullName: "",
+			email: "",
+			phone: "",
+			address: "",
+			school: "",
+			degree: "",
+			startDate: "",
+			endDate: "",
+			location: "",
+			company: "",
+			position: "",
+			startDateExp: "",
+			endDateExp: "",
+			locationExp: "",
+			jobDescription: "",
+			programmingLanguages: "",
+			webTech: "",
+			softwareTool: "",
+			concepts: "",
+			projectName: "",
+			projectLink: "",
+			projectLanguage: "",
+			projectDescription: "",
+		});
+	}
+	function loadExample() {
+		setFormData(initialState);
+	}
+
 	const [fullName, setFullName] = useState("Alan Zhang");
 	const [email, setEmail] = useState("alan.s.zhang@gmail.com");
 	const [phone, setPhone] = useState("+1 484-860-0997");
@@ -143,36 +203,11 @@ export default function ResumeBuilder() {
 		setProjectDescription(e.target.value);
 	}
 
-	const formData = {
-		fullName,
-		email,
-		phone,
-		address,
-		school,
-		degree,
-		startDate,
-		endDate,
-		location,
-		company,
-		position,
-		startDateExp,
-		endDateExp,
-		locationExp,
-		jobDescription,
-		programmingLanguages,
-		webTech,
-		softwareTool,
-		concepts,
-		projectName,
-		projectLink,
-		projectLanguage,
-		projectDescription,
-	};
-
 	return (
 		<div className="resume-builder">
 			<div className="form-section">
-				<FormHeader className="form-header"></FormHeader>
+				<FormHeader clearResume={clearResume} loadExample={loadExample} />
+
 				<Personal
 					fullName={fullName}
 					email={email}
